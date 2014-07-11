@@ -1,0 +1,28 @@
+<html><head>
+<script type="text/javascript">
+var myCanvas;
+var myCanvasContext;
+
+</script>
+<style type="text/css"></style></head>
+
+
+<body>
+<canvas id="myCanvasId" width="700" height="700" style="border: 5px solid red; bgcolor: orange;">
+  Affichage d'un texte pour les navigateurs qui ne supportent pas canvas.
+</canvas>
+<video src="http://172.21.253.41/htmlengine/users/hmachefe/H5.1/avatar.mp4" autoplay=""></video>
+<div style="position: absolute; top: 20px; left: 800px; font-size:24px;">
+<h1>SOLUTION</h1>
+						myCanvas = document.getElementById('myCanvasId');<br>
+						myCanvasContext = myCanvas.getContext('2d');<br>
+						myCanvasContext.clearRect(0, 0, myCanvas.width, myCanvas.height);<br>
+
+						myCanvasContext.moveTo(100, 150);<br>
+						myCanvasContext.lineTo(450, 50);<br>
+						myCanvasContext.stroke(); <br>
+</div>
+
+
+</body>
+</html>
